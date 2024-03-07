@@ -1,6 +1,6 @@
-import { IoMdArrowDropup } from "react-icons/io";
+import { Change24hr } from "./Change24hr";
 
-export const Coin = ({ iconUrl, name, percent }) => {
+export const Coin = ({ iconUrl, name, symbol, percent }) => {
   return (
     <div className="flex justify-between m-2 py-1">
       <div className="flex">
@@ -10,11 +10,9 @@ export const Coin = ({ iconUrl, name, percent }) => {
           alt="icon"
         />
         <p className="mx-2 my-1">{name}</p>
+        <p className="my-1">({symbol})</p>
       </div>
-      <div className="px-2 bg-green-100 text-green-900 rounded-lg h-6 flex">
-        <IoMdArrowDropup className="m-1 text-xl" />
-        {percent}
-      </div>
+      <Change24hr percent={percent} />
     </div>
   );
 };

@@ -9,7 +9,7 @@ export const Sentiment = () => {
     { text: "Sell", percent: 16 },
   ];
   return (
-    <div className="bg-white mx-8 px-4">
+    <div className="bg-white mx-8 px-4 rounded-lg shadow-sm">
       <p className="text-xl font-medium my-1">Sentiment</p>
       <p className="flex text-lg font-medium">
         Key Events

@@ -1,5 +1,7 @@
 import { AboutBitcoin } from "./components/AboutBitcoin";
+import { AlsoLike } from "./components/AlsoLike";
 import { Appbar } from "./components/Appbar";
+import { ChartView } from "./components/ChartView";
 import { GetStarted } from "./components/GetStarted";
 import { MiddleButtons } from "./components/MiddleButtons";
 import { Sentiment } from "./components/Sentiment";
@@ -15,6 +17,8 @@ function App() {
       <Traverser />
       <div className="flex">
         <div className="w-3/4">
+          <ChartView />
+          <Performance />
           <AboutBitcoin />
           <MiddleButtons />
           <Sentiment />
@@ -26,6 +30,7 @@ function App() {
           <TrendingCoins />
         </div>
       </div>
+      <AlsoLike />
     </div>
   );
 }
